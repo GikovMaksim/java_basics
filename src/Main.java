@@ -1,8 +1,17 @@
 public class Main {
 
     public static void main(String[] args) {
-        Basket basket = new Basket();
-        basket.add("Milk", 40);
-        basket.print("Milk");
+        Basket fedorBasket = new Basket();
+        fedorBasket.add("Milk", 40);
+        fedorBasket.add("Donut", 20,0.2);
+        fedorBasket.add("Icecream", 20,10,0.1);
+        fedorBasket.print("Федор");
+
+        Basket senyaBasket = new Basket();
+        senyaBasket.add("Apple", 100,1.0);
+        senyaBasket.add("Pineapple",200, 1);
+        senyaBasket.add("Egg",89,9);
+        senyaBasket.add("Sugar",85,1.5);
+        senyaBasket.print("Арсений");
     }
 }
