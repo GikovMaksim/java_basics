@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,5 +15,12 @@ public class Main {
         senyaBasket.add("Egg",89,9);
         senyaBasket.add("Sugar",85,1.5);
         senyaBasket.print("Арсений");
+
+        Elevator elevator = new Elevator(-3, 26);
+        while(true) {
+            System.out.print("Введите номер этажа: ");
+            int floor = new Scanner(System.in).nextInt();
+            elevator.move(floor);
+        }
     }
 }
